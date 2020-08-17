@@ -1,5 +1,6 @@
 import React from 'react';
 import classes from './Profile.module.css'
+import MyPosts from './MyPosts/MyPosts';
 
 const Profile = () => {
    return (
@@ -8,14 +9,7 @@ const Profile = () => {
 				<img src="https://3.bp.blogspot.com/-2FAWxivXUUY/UwffyVvuYnI/AAAAAAAAPZ0/22AOcErMB2Q/s1600/davinci-panorama.jpg" />
 			</div>
 			<div>ava+description</div>
-			<div>
-				My posts
-				<div>New post</div>
-				<div className={classes.posts}>
-					<div className={classes.item}>post 1</div>
-					<div className={classes.item}>post 2</div>
-				</div>
-			</div>
+			<MyPosts />
 		</div>
    );
 }
