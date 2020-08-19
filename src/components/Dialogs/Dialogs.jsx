@@ -12,6 +12,14 @@ const DialogItem = (props) => {
 	)
 }
 
+const Message = (props) => {
+	return (
+		<div className={classes.message}>
+			{props.message}
+		</div>
+	)
+}
+
 const Dialogs = (props) => {
    return (
 		<div className={classes.dialogs}>
@@ -24,12 +32,12 @@ const Dialogs = (props) => {
 				<DialogItem name="Maxym" id="6" />
 			</div>
 			<div className={classes.messages}>
-				<div className={classes.message}>Hi, man! How are you?</div>
-				<div className={classes.message}>What is your phone number?</div>
-				<div className={classes.message}>Who was that dude on my party?</div>
-				<div className={classes.message}>Did you manage to do that complicated task?</div>
-				<div className={classes.message}>What time is it?</div>
-				<div className={classes.message}>I'm fine, thank, dude.</div>
+				<Message message="Hi, man! How are you?" />
+				<Message message="What is your phone number?" />
+				<Message message="Who was that dude on my party?" />
+				<Message message="Did you manage to do that complicated task?" />
+				<Message message="What time is it?" />
+				<Message message="I'm fine, thank, dude." />
 			</div>
 		</div>
    );
