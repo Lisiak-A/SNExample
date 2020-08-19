@@ -3,6 +3,12 @@ import classes from './MyPosts.module.css';
 import Post from './Post/Post';
 
 const MyPosts = () => {
+
+	let postsData = [
+		{ id: 1, post: "What's up, dude?", likesCount: 15 },
+		{ id: 2, post: "It's okay, man", likesCount: 115 }
+	];
+
    return (
 		<div className={classes.mypostBlock}>
 			<h3>My posts</h3>
@@ -15,8 +21,8 @@ const MyPosts = () => {
 				</div>
 			</div>
 			<div className={classes.posts}>
-				<Post message="What's up, dude?" likesCount="like: 15" />
-				<Post message="This is the post about post" likesCount="like: 35" />
+				<Post message={postsData[0].post} likesCount={postsData[0].likesCount} />
+				<Post message={postsData[1].post} likesCount={postsData[1].likesCount} />
 			</div>
 		</div>
    );
